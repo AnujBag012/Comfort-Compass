@@ -9,7 +9,7 @@ const Navigation = () => {
   
   const isActive = (path: string) => {
     if (path === "/" && location.pathname === "/") return true;
-    if (path === "/#/packages" && location.pathname === "/packages") return true;
+    if (path === "/packages" && location.pathname === "/packages") return true;
     if (path === "/#/your-packages" && location.pathname === "/#/your-packages") return true;
     return false;
   };
@@ -43,7 +43,7 @@ const Navigation = () => {
               ABOUT US
             </a>
             <a 
-              href="/packages" 
+              href="/#/packages" 
               className={`transition-colors font-medium ${
                 isActive("/packages") ? "text-primary" : "text-foreground hover:text-primary"
               }`}
@@ -51,7 +51,7 @@ const Navigation = () => {
               PACKAGE
             </a>
             <a 
-              href="/your-packages" 
+              href="/#/your-packages" 
               className={`transition-colors font-medium ${
                 isActive("/your-packages") ? "text-primary" : "text-foreground hover:text-primary"
               }`}
