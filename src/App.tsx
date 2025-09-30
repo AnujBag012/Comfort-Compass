@@ -2,8 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { HashRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Packages from "./pages/Packages";
 import YourPackages from "./pages/YourPackages";
@@ -11,6 +11,7 @@ import PackageDetail from "./pages/PackageDetail";
 import Rewards from "./pages/Rewards";
 import NotFound from "./pages/NotFound";
 import { Link } from "react-router-dom";
+import Navigation  from "@/components/ui/navigation";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <Router>
+        <Navigation/>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/packages" element={<Packages />} />
