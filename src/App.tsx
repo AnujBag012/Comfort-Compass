@@ -24,10 +24,10 @@ const App = () => (
         <Navigation/>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/packages" element={<Packages />} />
-          <Route path="/your-packages" element={<YourPackages />} />
-          <Route path="/package/:id" element={<PackageDetail />} />
-          <Route path="/rewards" element={<Rewards />} />
+          <Route path="/#/packages" element={<Packages />} />
+          <Route path="/#/your-packages" element={<YourPackages />} />
+          <Route path="/#/package/:id" element={<PackageDetail />} />
+          <Route path="/#/rewards" element={<Rewards />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
