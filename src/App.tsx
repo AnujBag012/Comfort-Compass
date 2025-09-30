@@ -10,6 +10,7 @@ import YourPackages from "./pages/YourPackages";
 import PackageDetail from "./pages/PackageDetail";
 import Rewards from "./pages/Rewards";
 import NotFound from "./pages/NotFound";
+import { Link } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +22,9 @@ const App = () => (
       <Router>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/packages" element={<Packages />} />
+          
+          {/* <Route path="/packages" element={<Packages />} /> */}
+          <Link to="packages"><Packages/></Link>
           <Route path="/your-packages" element={<YourPackages />} />
           <Route path="/package/:id" element={<PackageDetail />} />
           <Route path="/rewards" element={<Rewards />} />
