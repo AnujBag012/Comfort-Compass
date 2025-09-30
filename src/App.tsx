@@ -27,7 +27,7 @@ const App = () => (
           <Route path="/package/:id" element={<PackageDetail />} />
           <Route path="/rewards" element={<Rewards />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </Router>
     </TooltipProvider>
