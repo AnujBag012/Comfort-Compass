@@ -9,7 +9,7 @@ const Navigation = () => {
   
   const isActive = (path: string) => {
     if (path === "/" && location.pathname === "/") return true;
-    if (path === "/packages" && location.pathname === "/packages") return true;
+    if (path === "/packages" && location.pathname === "/#/packages") return true;
     if (path === "/#/your-packages" && location.pathname === "/#/your-packages") return true;
     return false;
   };
