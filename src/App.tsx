@@ -24,7 +24,7 @@ const App = () => (
         <Navigation/>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/#/packages" element={<Packages />} />
+          <Route path="/packages" element={<Packages />} />
           <Route path="/#/your-packages" element={<YourPackages />} />
           <Route path="/#/package/:id" element={<PackageDetail />} />
           <Route path="/#/rewards" element={<Rewards />} />
