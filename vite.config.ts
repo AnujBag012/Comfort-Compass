@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // base: "/Comfort-Compass/",  // 
   server: {
-    base:"/Comfort-Compass/",
+    // base:"/Comfort-Compass/",
     host: "::",
     port: 8080,
   },
